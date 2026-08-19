@@ -1,0 +1,6 @@
+{
+  "name": "AceTrack - Tennis Live Match Capture & Analytics",
+  "description": "Herramienta PWA de captura y análisis táctico-espacial de tenis en tiempo real con Court Detail interactivo y analítica avanzada.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

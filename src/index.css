@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg-navy: #0A192F;
+    --color-card-navy: #112240;
+    --color-surface-navy: #1B2D4F;
+    --color-border-navy: #233554;
+    --color-accent-tennis: #CCFF00;
+    --color-winner-cyan: #00F0FF;
+    --color-error-red: #FF4D4D;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #0A192F;
+    color: #F1F5F9;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .font-mono-numbers {
+    font-family: 'JetBrains Mono', monospace, ui-monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(17, 34, 64, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-modal {
+  background: rgba(10, 25, 47, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-card {
+  background: rgba(27, 45, 79, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Neon Glows */
+.glow-accent {
+  box-shadow: 0 0 15px rgba(204, 255, 0, 0.35);
+}
+
+.glow-winner {
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+}
+
+.glow-error {
+  box-shadow: 0 0 15px rgba(255, 77, 77, 0.4);
+}
+
+/* Touch targets min 44px */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 25, 47, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
